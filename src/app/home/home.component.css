@@ -1,0 +1,5 @@
+.back{
+    height:42em; background-size:cover; width:auto;
+    background-image:url('/assets/images/ims.jpg');
+    background-position:50% 50%;
+  }

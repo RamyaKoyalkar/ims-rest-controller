@@ -1,0 +1,27 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Dealers Info</h2>
+    </div>
+    <div class="panel-body">
+        <table class="table table-sm table-dark table-fit">
+        <thead>
+          <tr>
+            <th scope="col">Dealer Id</th>
+            <th scope="col">Email</th>
+            <th scope="col">Name</th>
+            <th scope="col">Phone No</th>
+            <th scope="col">Address</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let d of dealers | async" scope="row">
+        <td>{{ d.id }}</td>
+        <td>{{ d.email }}</td>
+        <td>{{ d.fname }} {{ d.lname }}</td>
+        <td>{{ d.phoneNo }}</td>
+            <td>{{ d.street }} , {{ d.city }} - {{ d.pincode }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
